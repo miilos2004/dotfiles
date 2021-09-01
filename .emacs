@@ -1,4 +1,4 @@
-
+en
 ;; Added by Package.el.  This must come before configurations of
 ;; installed packages.  Don't delete this line.  If you don't want it,
 ;; just comment it out by adding a semicolon to the start of the line.
@@ -13,6 +13,9 @@
  '(column-number-mode t)
  '(delete-selection-mode t)
  '(display-battery-mode t)
+ '(display-line-numbers t)
+ '(display-line-numbers-current-absolute t)
+ '(display-line-numbers-type t)
  '(display-time-mode t)
  '(enable-local-eval t)
  '(indent-tabs-mode nil)
@@ -22,10 +25,10 @@
  '(initial-frame-alist
    (quote
     ((menu-bar-lines . 1)
-     (vertical-scroll-bars . right)
      (tool-bar-lines . 0)
      (width . 106)
      (hight . 60))))
+ '(line-number-display-limit nil)
  '(line-number-mode t)
  '(package-selected-packages (quote (magit)))
  '(scroll-bar-mode (quote right))
@@ -54,6 +57,7 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(default ((t (:inherit nil :stipple nil :background "#292929" :foreground "#d3d3d3" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 87 :width normal :foundry "bitstream" :family "Courier 10 Pitch"))))
+ '(line-number-current-line ((t (:inherit line-number :inverse-video t))))
  '(my-long-line-face ((((class color)) (:background "gray10"))) t)
  '(my-tab-face ((((class color)) (:background "grey10"))) t)
  '(my-trailing-space-face ((((class color)) (:background "gray10"))) t))
